@@ -7,18 +7,50 @@
     <link rel="stylesheet" href="cu.css">
 </head>
 <body>
-    <header>
-        <h2 >logo</h2>  
-        <a class="a1" href="">Desenvolvedor</a>
-        <a class="a2" href="">Suporte</a>
-        <a class="a3" href="">Login</a>
+    <header class="navigation">
+        <nav>
+        <h2 >Muubank</h2>
+        <a class="a1" href="#">Desenvolvedor</a>
+        <a class="a2" href="#">Suporte</a>
+        <a class="a3" href="#">Registrar-se</a>
+       
+        </nav>
     </header>
     <main>
-        <label for="">Nome
-          <input class="input1" type="text">  
-        </label>
-        <label for="">Email
-          <input type="email">  
+       <div class="wrapper">
+        <div class="bagulha-form login">
+            <h2 class="h2o">Registrar-se</h2>
+            <form action="#">
+                <div class="bagulha-input">
+                    <label>
+                        Nome
+                    </label>
+                    <input type="text" placeholder="Sobrenome também XD" required>
+                </div>
+                <div class="bagulha-input">
+                    <label>
+                        Email
+                    </label>
+                    <input class="" type="email" placeholder="Muubank@gmail.com" required>
+                </div>
+                
+                <div class="bagulha-input1">
+                    <label>
+                        Telefone
+                    </label>
+                    <input class="" type="tel" pattern="\d{2} \d{1} \d{8}"  placeholder="84 9 87654321" required>
+                </div>
+                <div class="bagulha-input1">
+                    <label class="input1">
+                        Idade
+                    </label>
+                    <input class="" type="number" placeholder="101 gostoso" required>
+                </div>
+
+                <button id="buttonzito" type="submit" class="btn">Registrar-se</button>
+            </form>
+        </div>
+       </div>
        
     </main>
 </body>
