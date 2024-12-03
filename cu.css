@@ -13,6 +13,9 @@ body{
 .h2o{
     text-align: center;
 }
+div{
+    font-size: 19px;
+}
 .input1{
     padding-left: 3%;
 }
@@ -23,8 +26,10 @@ body{
 .bagulha-input1{
     margin-left:5% ;
     display: inline;
-    text-align: center;
-
+}
+.bagulha-input2{
+    margin-top: 6px;
+     margin-left:25% ;
 }
 .a3{
     text-decoration: none;
@@ -44,14 +49,14 @@ body{
     color:  white;
     font-size: 20px;
     font-weight: 500;
-    padding-right:2% ;
+    padding-right:2%;
     text-shadow: 2px 2px 0px black;
 }
 header h2 {
     padding-left: 2%;
     color: white;
     display: inline-block;
-    padding-right: 63%;
+    padding-right: 55%;
 }
 main  {
 
@@ -81,4 +86,7 @@ header{
     border: none;
     outline: none;
     border-radius: 6px;
+}
+.inputzinho1{
+    padding-right:65px ;
 }
