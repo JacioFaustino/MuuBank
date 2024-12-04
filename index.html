@@ -11,7 +11,7 @@
         <nav>
         <h2 >Muubank</h2>
         <a class="a1" href="#">Desenvolvedor</a>
-        <a class="a2" href="#">Suporte</a>
+        <a class="a2" href="#">Seus dados</a>
         <a class="a3" href="#">Registrar-se</a>
        
         </nav>
@@ -31,14 +31,14 @@
                     <label>
                         Email
                     </label>
-                    <input class="" type="email" placeholder="Muubank@gmail.com" required>
+                    <input class="emaol" type="email" placeholder="Muubank@gmail.com" required>
                 </div>
                 
                 <div class="bagulha-input1">
                     <label>
                         Telefone
                     </label>
-                    <input class="" type="tel" pattern="\d{2} \d{1} \d{8}"  placeholder="84 9 87654321" required>
+                    <input class="tel" type="tel" pattern="\d{2} \d{1} \d{8}"  placeholder="84 9 87654321" required>
                 </div>
                 <div class="bagulha-input1">
                     <label class="input1">
@@ -47,14 +47,59 @@
                     <input class="" type="number" placeholder="29 filhos">
                 </div>
                 
+                <div class="bagulha-input1">
+                    <label>
+                        Data de Nascimento
+                    </label>
+                    <input class="dataNas" type="date" required>
+                </div>
+                <div class="bagulha-input3">
+                    <p>Selecione seu gênero:</p>
+                    <label for="masculino">
+                      <input type="radio" id="masculino" name="genero" value="masculino" required>
+                      Masculino
+                    </label>
+                  
+                    <label for="feminino">
+                      <input type="radio" id="feminino" name="genero" value="feminino" required>
+                      Feminino
+                    </label>
+                  
+                    <label class="radio" for="outro">
+                      <input type="radio" id="outro" name="genero" value="outro" required>
+                      Outro
+                    </label>
+                </div>
+
+                <div class="bagulha-input2">
+                    <label>
+                      Prazo da Assinatura
+                    </label>
+                    <input class="prazoAss" type="month" required>
+                </div>
+                
                 <div class="bagulha-input2">
                     <label>
                         Senha
                     </label>
                     <input class="inputzinho1" type="password" placeholder="XXXXXXXXXXXXX" required>
                 </div>
+                <div class="bagulha-input-perdiaconta">
+                    <label for="file">
+                        Envie fotos do(s) seu(s) filho(s)
+                    </label>
+                    <input id="file" type="file" accept=".jpg,.jpeg,.png,.gif,.pdf" multiple>
+                </div>
 
+                <div class="concordosim">
+                    <p></p>
+                    <label for="termos">
+                        Eu permito que os meus dados sejam postados e utilizados para os interesses pessoais em âmbito global.
+                    </label>
+                    <input type="checkbox" id="termos" name="termos" value="concordo" required>
+                </div>
                 <button id="buttonzito" type="submit" class="btn">Registrar-se</button>
+                <button id="buttonzao" type="reset" class="btn">Voltar ao padrão</button>
             </form>
         </div>
        </div>

@@ -6,15 +6,33 @@
 }
 body{
     height: 100vh;
-    background: url('backgroud do muubank.png') no-repeat;
+    background: url('Backgroud\ do\ muubank2.png') no-repeat;
     background-position: center;
     background-size: cover;
 }
 .h2o{
     text-align: center;
 }
+.concordosim{
+    color: rgb(255, 255, 255);
+    margin-left: 5%;
+    font-size: 15px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+#termos{
+    margin-top: 2%;
+}
+.dataNas{
+    margin-bottom: 0px;
+}
+.prazoAss{
+    margin-top: 14px;
+}
+div input{
+    margin-bottom: 15px;
+}
 div{
-    font-size: 19px;
+    font-size: 20px;
 }
 .input1{
     padding-left: 3%;
@@ -29,7 +47,10 @@ div{
 }
 .bagulha-input2{
     margin-top: 6px;
-     margin-left:25% ;
+     margin-left:5% ;
+}
+.bagulha-input3{
+    padding-left: 5%;
 }
 .a3{
     text-decoration: none;
@@ -70,12 +91,16 @@ header{
 .wrapper {
     position: relative;
     width: 600px;
-    height: 1000px;
+    height: 750px;
     padding-top: 5px;
     background: transparent;
     border: 2px solid rgb(255, 255, 255, .5);
     border-radius: 20px ;
     backdrop-filter: blur(20px);
+}
+#buttonzao{
+    margin-top: 10px;
+    background: rgb(168, 15, 155);
 }
 .btn{
     margin-top: 5%;
@@ -89,4 +114,7 @@ header{
 }
 .inputzinho1{
     padding-right:65px ;
+}
+.bagulha-input-perdiaconta{
+    margin-left: 5%;
 }
