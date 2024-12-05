@@ -24,10 +24,29 @@ body{
 }
 header {
     display: flex;
-    
     align-items: center;
     padding: 20px;
     margin-bottom: 50px;
+}
+
+.textohidden{
+    color: rgb(99, 132, 202);
+    position: absolute;
+    top: -14px;
+    right: 177px;
+    bottom: 870px;
+    padding-left: 1px;
+    padding-top: 75px;
+    padding-bottom: 45px;
+    border-radius: 5px;
+    font-size:65% ;
+    opacity: 0;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    transition: opacity 0.3s ease;
+}
+
+.a1 .textohidden:hover{
+    opacity: 1;
 }
 
 .navigation a{
@@ -40,6 +59,16 @@ header {
 .navigation a:hover{
     text-shadow: 2px 2px 0px purple;
 }
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+}
+
+
 header h2 {
     color: white;
 }
@@ -51,13 +80,7 @@ main  {
     align-items: center;
 }
 
-nav {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    align-items: center;
-}
+
 
 .h2o{
     text-align: center;
@@ -142,7 +165,7 @@ div{
 .rodape{
     align-items: center;
     text-align: center;
-    background-color: rgb(77, 90, 107);
+    background-color: rgb(78, 68, 114);
     width: 100vw;
     box-sizing: border-box;
     margin: -8px;
@@ -152,4 +175,28 @@ footer p{
 }
 footer p:hover{
     color: rgb(255, 255, 255);
+}
+
+
+/*---------------------------------------- PHP ------------------------------------------- */
+
+.piloto{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+.piloto{
+    margin: 0;
+}
+.wrapper1 {
+    position: relative;
+    width: 600px;
+    height: 750px;
+    padding-top: 5px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255, .5);
+    border-radius: 20px ;
+    background: linear-gradient(to top,rgb(119, 104, 173), white);
+    margin-bottom: 5%;
 }

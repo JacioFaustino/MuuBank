@@ -12,24 +12,32 @@
         
         <nav>
             <a class="a1" href="#">Desenvolvedor</a>
-            <a class="a3" href="dados.php">Seus dados</a>
+            <a class="a3" href="#">Seus dados</a>
             <a class="a1" href="index.html">Registrar-se</a>
         </nav>
     </header>
     <main>
-        <div class="wrapper">
+        <div class="wrapper1">
     <h2 class="h2o">Seus dados</h2>
-
+        <div class="piloto">
         <?php
         
-        $nome = ($_GET)["nome"];
+        $nome = ($_GET)["nome"] ?? " ";
 
-        $email = ($_GET)["email"];
+        $email = ($_GET)["email"] ?? "Não preenchido";
 
         echo"
-        <p>Nome: $nome </p>
-        <p>Email: $email </p>"
+        <p>Nome: $nome</p>
+        <p> Email: $email    </p>
+        "
          ?>
+        </div>
+
+        <?php 
+        
+        
+        ?>
+
         </div>
     </main>
     <div class="rodape">
