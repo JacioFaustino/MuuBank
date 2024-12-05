@@ -12,93 +12,93 @@
         
         <nav>
             <a class="a1" href="#">Desenvolvedor</a>
-            <a class="a1" href="#">Seus dados</a>
-            <a class="a3" href="#">Registrar-se</a>
+            <a class="a1" href="dados.php">Seus dados</a>
+            <a class="a3" href="index.html">Registrar-se</a>
         </nav>
     </header>
     <main>
        <div class="wrapper">
         <div class="bagulha-form login">
             <h2 class="h2o">Registrar-se</h2>
-            <form action="#">
+            <form action="dados.php" method="get">
                 <div class="bagulha-input">
-                    <label>
+                    <label for="idnome">
                         Nome
                     </label>
-                    <input type="text" placeholder="Sobrenome também XD" required>
+                    <input name="nome" id="idnome"  type="text" placeholder="Sobrenome também XD" required>
                 </div>
                 <div class="bagulha-input">
-                    <label>
+                    <label for="idemail" >
                         Email
                     </label>
-                    <input class="emaol" type="email" placeholder="Muubank@gmail.com" required>
+                    <input  name="email" id="idemail" class="emaol" type="email" placeholder="Muubank@gmail.com" required>
                 </div>
                 
                 <div class="bagulha-input1">
-                    <label>
+                    <label for="idtelefone" >
                         Telefone
                     </label>
-                    <input class="tel" type="tel" pattern="\d{2} \d{1} \d{8}"  placeholder="84 9 87654321" required>
+                    <input name="telefone" id="idtelefone" class="tel" type="tel" pattern="\d{2} \d{1} \d{8}"  placeholder="84 9 87654321" >
                 </div>
                 <div class="bagulha-input1">
-                    <label class="input1">
+                    <label for="idfilhos" class="input1">
                         Filhos
                     </label>
-                    <input class="" type="number" placeholder="29 filhos">
+                    <input name="filhos" id="idfilhos" class="" type="number" placeholder="29 filhos">
                 </div>
                 
                 <div class="bagulha-input1">
-                    <label>
+                    <label for="iddataNas" >
                         Data de Nascimento
                     </label>
-                    <input class="dataNas" type="date" required>
+                    <input name="dataNas" id="iddataNas" class="dataNas" type="date" required>
                 </div>
                 <div class="bagulha-input3">
                     <p class="p-de-genero">Selecione seu gênero:</p>
-                    <label for="masculino">
-                      <input type="radio" id="masculino" name="genero" value="masculino" required>
+                    <label for="idmasculino">
+                      <input type="radio" id="idmasculino" name="genero" value="masculino" required>
                       Masculino
                     </label>
                   
-                    <label for="feminino">
-                      <input type="radio" id="feminino" name="genero" value="feminino" required>
+                    <label for="idfeminino">
+                      <input type="radio" id="idfeminino" name="genero" value="feminino" required>
                       Feminino
                     </label>
                   
-                    <label class="radio" for="outro">
-                      <input type="radio" id="outro" name="genero" value="outro" required>
+                    <label class="radio" for="idoutro">
+                      <input type="radio" id="idoutro" name="genero" value="outro" required>
                       Outro
                     </label>
                 </div>
 
                 <div class="bagulha-input2">
-                    <label>
+                    <label for="idPrazoAss">
                       Prazo da Assinatura
                     </label>
-                    <input class="prazoAss" type="month" required>
+                    <input name="PrazoAss" id="idPrazoAss" class="prazoAss" type="month" required>
                 </div>
                 
                 <div class="bagulha-input2">
-                    <label>
+                    <label  for="idsenha">
                         Senha
                     </label>
-                    <input class="inputzinho1" type="password" placeholder="XXXXXXXXXXXXX" required>
+                    <input name="senha" id="idsenha" class="inputzinho1" type="password" placeholder="XXXXXXXXXXXXX" required>
                 </div>
                 <div class="bagulha-input-perdiaconta">
-                    <label for="file">
+                    <label for="idfile">
                         Envie fotos do(s) seu(s) filho(s)
                     </label>
-                    <input id="file" type="file" accept=".jpg,.jpeg,.png,.gif,.pdf" multiple>
+                    <input name="file" id="idfile" type="file" accept=".jpg,.jpeg,.png,.gif,.pdf" multiple>
                 </div>
 
                 <div class="concordosim">
                     <p></p>
-                    <label for="termos">
+                    <label for="idtermos">
                         Eu permito que os meus dados sejam postados e utilizados para os interesses pessoais em âmbito global.
                     </label>
-                    <input type="checkbox" id="termos" name="termos" value="concordo" required>
+                    <input type="checkbox" id="idtermos" name="termos" value="concordo" required>
                 </div>
-                <button id="buttonzito" type="submit" class="btn">Registrar-se</button>
+                <button id="buttonzito" type="submit" class="btn" value="enviar">Registrar-se</button>
                 <button id="buttonzao" type="reset" class="btn">Voltar ao padrão</button>
             </form>
         </div>
