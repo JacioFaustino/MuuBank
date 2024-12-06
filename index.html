@@ -27,8 +27,7 @@
                         Nome
                     </label>
                     <input name="nome" id="idnome"  type="text" placeholder="Sobrenome também XD" required>
-                </div>
-                <div class="bagulha-input">
+            
                     <label for="idemail" >
                         Email
                     </label>
@@ -40,19 +39,18 @@
                         Telefone
                     </label>
                     <input name="telefone" id="idtelefone" class="tel" type="tel" pattern="\d{2} \d{1} \d{8}"  placeholder="84 9 87654321" >
-                </div>
-                <div class="bagulha-input1">
+                
                     <label for="idfilhos" class="input1">
                         Filhos
                     </label>
-                    <input name="filhos" id="idfilhos" class="" type="number" placeholder="29 filhos">
+                    <input name="filhos" id="idfilhos" class="" min="0" max="44" type="number" placeholder="XX">
                 </div>
                 
                 <div class="bagulha-input1">
                     <label for="iddataNas" >
                         Data de Nascimento
                     </label>
-                    <input name="dataNas" id="iddataNas" class="dataNas" type="date" required>
+                    <input name="dataNas" id="iddataNas" min="1924-12-06" max="2006-12-06" class="dataNas" type="date" required>
                 </div>
                 <div class="bagulha-input3">
                     <p class="p-de-genero">Selecione seu gênero:</p>
@@ -76,14 +74,15 @@
                     <label for="idPrazoAss">
                       Prazo da Assinatura
                     </label>
-                    <input name="PrazoAss" id="idPrazoAss" class="prazoAss" type="month" required>
+<!-- Sem javascript não posso colocar esse minimo e máximo do input de assinatura funcionar pra sempre sem precisar de alterações periodicamente no código. -->
+                    <input name="PrazoAss" id="idPrazoAss" min="2025-1" max="2026-1" class="prazoAss" type="month" placeholder="2025-1" required>
                 </div>
                 
                 <div class="bagulha-input2">
                     <label  for="idsenha">
                         Senha
                     </label>
-                    <input name="senha" id="idsenha" class="inputzinho1" type="password" placeholder="XXXXXXXXXXXXX" required>
+                    <input name="senha" id="idsenha" class="inputzinho1" minlength="8" type="password" placeholder="XXXXXXXXXXXXX" required>
                 </div>
                 <div class="bagulha-input-perdiaconta">
                     <label for="idfile">
@@ -95,7 +94,7 @@
                 <div class="concordosim">
                     <p></p>
                     <label for="idtermos">
-                        Eu permito que os meus dados sejam postados e utilizados para os interesses pessoais em âmbito global.
+                        Eu permito que os meus dados sejam divulgados e utilizados para os interesses pessoais e comerciais em âmbito global
                     </label>
                     <input type="checkbox" id="idtermos" name="termos" value="concordo" required>
                 </div>

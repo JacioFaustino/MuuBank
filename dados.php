@@ -17,27 +17,31 @@
         </nav>
     </header>
     <main>
-        <div class="wrapper1">
-    <h2 class="h2o">Seus dados</h2>
-        <div class="piloto">
-        <?php
+    <div class="wrapper1">
+        <h2 class="h2o">Seus dados</h2>
+            <div class="piloto">
+                <?php
         
-        $nome = ($_GET)["nome"] ?? " ";
+                    $nome = ($_GET)["nome"] ?? "Não preenchido";
 
-        $email = ($_GET)["email"] ?? "Não preenchido";
+                    $email = ($_GET)["email"] ?? "Não preenchido";
 
-        echo"
-        <p>Nome: $nome</p>
-        <p> Email: $email    </p>
-        "
-         ?>
+                    echo"
+                    <p>Nome: $nome</p>
+                    <p> Email: $email</p>"
+                ?>
+            </div>
+        <div id="paragrafos" class="p2">
+            <p>
+                <?php 
+                    $telefone = ($_GET)["telefone"] ?? "Não preenchido";
+                    $idade = ($_GET)["idade"] ?? "N/A";
+                    echo"Telefone: $telefone";
+                    
+
+                ?>
+            </p>
         </div>
-
-        <?php 
-        
-        
-        ?>
-
         </div>
     </main>
     <div class="rodape">

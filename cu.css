@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 20px;
     font-family: "Poppins", sans-serif;
 }
 body{
@@ -86,46 +87,83 @@ main  {
     text-align: center;
     margin-bottom: 2%;
 }
-div input{
-    margin-bottom: 15px;
-}
+
 div{
     font-size: 20px;
 }
-.input1{
-    padding-left: 3%;
+label{
+    margin-left: 7%;
+}
+div input{
+    border: 2px solid black;
+    margin-left: 5px;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 .bagulha-input{
-    display: inline;
-    padding-left: 50px;
+    display: flex;
 }
+
 .bagulha-input1{
-    margin-left:5% ;
-    display: inline;
+    margin-left: -27px;
+    display: flex;
 }
 .bagulha-input2{
     margin-top: 6px;
-     margin-left:5% ;
+    margin-left: -25px;
 }
 .bagulha-input3{
     margin-top: 3%;
-    padding-left: 5%;
+    padding-left: 3.5%;
+}
+.bagulha-input3 label{
+    margin-top: 6%;
+     margin-left: 2px;
+}
+#idmasculino{
+    margin-top: 20px;
 }
 .p-de-genero{
     margin-bottom: 2%;
 }
-.inputzinho1{
-    padding-right:65px ;
-}
+
 .bagulha-input-perdiaconta{
-    margin-left: 5%;
+    display: inline-block;
+    position: relative;
+    align-items: start;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 2%;
+}
+.bagulha-input-perdiaconta label{
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    right: 20px;
+}
+.bagulha-input-perdiaconta input{
+    border: 0;
 }
 .concordosim{
+    display:flex ;
+    align-items: center;
     color: rgb(255, 255, 255);
     margin-top:1% ;
-    margin-left: 5%;
-    font-size: 15px;
+    margin-left: -28px;
+    padding-right:10px ;
+    font-weight: 300;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
+
+}
+#idtermos{
+    display: flex;
+    position: relative;
+    top: 22px;
+    right: 45px;
+    width: 30px;
+    height: 50px;
 }
 #termos{
     margin-top: 2%;
@@ -139,7 +177,7 @@ div{
 
 .wrapper {
     position: relative;
-    width: 600px;
+    width: 700px;
     height: 750px;
     padding-top: 5px;
     background: transparent;
@@ -153,7 +191,7 @@ div{
     background: rgb(168, 15, 155);
 }
 .btn{
-    margin-top: 5%;
+    margin-top: 15px;
     background: rgb(252, 244, 173);
     margin-left: 25%;
     width: 50%;
@@ -166,6 +204,8 @@ div{
     align-items: center;
     text-align: center;
     background-color: rgb(78, 68, 114);
+    background-repeat: repeat;
+    background-size: cover;
     width: 100vw;
     box-sizing: border-box;
     margin: -8px;
@@ -180,15 +220,7 @@ footer p:hover{
 
 /*---------------------------------------- PHP ------------------------------------------- */
 
-.piloto{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    gap: 20px;
-}
-.piloto{
-    margin: 0;
-}
+
 .wrapper1 {
     position: relative;
     width: 600px;
@@ -199,4 +231,14 @@ footer p:hover{
     border-radius: 20px ;
     background: linear-gradient(to top,rgb(119, 104, 173), white);
     margin-bottom: 5%;
+}
+
+#paragrafos{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+.piloto{
+    margin: 0;
 }
