@@ -19,34 +19,62 @@
     <main>
     <div class="wrapper1">
         <h2 class="h2o">Seus dados</h2>
-            <div class="piloto">
-                <?php
-        
-                    $nome = ($_GET)["nome"] ?? "Não preenchido";
-
-                    $email = ($_GET)["email"] ?? "Não preenchido";
-
-                    echo"
-                    <p>Nome: $nome</p>
-                    <p> Email: $email</p>"
-                ?>
-            </div>
+        <div class="piloto">
+            <?php
+                $nome = ($_POST)["nome"] ?? "Não preenchido";
+                $email = ($_POST)["email"] ?? "N/A";
+                echo"
+                <p>Nome: $nome</p>
+                <p> Email: $email</p>"
+            ?>
+        </div>
         <div id="paragrafos" class="p2">
-            <p>
-                <?php 
-                    $telefone = ($_GET)["telefone"] ?? "Não preenchido";
-                    $idade = ($_GET)["idade"] ?? "N/A";
-                    echo"Telefone: $telefone";
-                    
 
-                ?>
-            </p>
+            <?php 
+                $telefone = ($_POST)["telefone"] ?? "Não preenchido";
+                $filhos = ($_POST)["filhos"] ?? "N/A";
+                echo"<p>Telefone: $telefone</p> ";
+                if($filhos == ''){
+                    echo "<p>Filhos: N/A</p> ";
+                }
+                else{
+                echo'<p>Filhos:'. $filhos .'</p>';
+                }
+            ?>
         </div>
+        <div class="p3">
+            <?php 
+                $dataNas = ($_POST)["dataNas"] ?? "Não preenchido";
+                $genero = ($_POST)["genero"] ?? "N/A";
+                echo"<p>Data de Nascimento: $dataNas</p> ";
+                echo"<p>Gênero: $genero</p> ";
+            ?>
         </div>
+        <div class="p3">
+            <?php 
+                $PrazoAss = ($_POST)["PrazoAss"] ?? "Não preenchido";
+                $senha = ($_POST)["senha"] ?? "N/A";
+                echo"<p>Prazo da Assinatura: $PrazoAss</p> ";
+                echo"<p>Senha: $senha</p> ";
+            ?>
+        </div>
+        <div class="p3">
+            <?php
+                $file = ($_POST)['file'] ?? "N/A";
+                $termos = ($_POST)["termos"] ?? "N/A";
+                if($file == ''){
+                    echo'<p>Arquivo: N/A</p>';
+                }
+                else{
+                    echo'<p>Arquivo: '. $file .' </p>';
+                }
+                echo"<p>Termos: $termos</p> ";
+            ?>
+        </div>
+    </div>    
     </main>
-    <div class="rodape">
+    <div class="rodape1">
      <footer>
-
         <p>IFRN campus Santa Cruz</p>
         <p>Trabalho de Autoria Web</p>
         <p>Prof. Marcelo Figuereido Barbosa Júnior</p>

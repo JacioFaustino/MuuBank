@@ -21,7 +21,7 @@
        <div class="wrapper">
         <div class="bagulha-form login">
             <h2 class="h2o">Registrar-se</h2>
-            <form action="dados.php" method="get">
+            <form action="dados.php" method="post">
                 <div class="bagulha-input">
                     <label for="idnome">
                         Nome
@@ -38,7 +38,7 @@
                     <label for="idtelefone" >
                         Telefone
                     </label>
-                    <input name="telefone" id="idtelefone" class="tel" type="tel" pattern="\d{2} \d{1} \d{8}"  placeholder="84 9 87654321" >
+                    <input name="telefone" id="idtelefone" class="tel" type="tel" pattern="\d{2} \d{1} \d{8}"  placeholder="84 9 87654321" required>
                 
                     <label for="idfilhos" class="input1">
                         Filhos
@@ -75,7 +75,7 @@
                       Prazo da Assinatura
                     </label>
 <!-- Sem javascript não posso colocar esse minimo e máximo do input de assinatura funcionar pra sempre sem precisar de alterações periodicamente no código. -->
-                    <input name="PrazoAss" id="idPrazoAss" min="2025-1" max="2026-1" class="prazoAss" type="month" placeholder="2025-1" required>
+                    <input name="PrazoAss" id="idPrazoAss" class="prazoAss" type="month" placeholder="2025-1" min="2025-01" max="2026-01" required>
                 </div>
                 
                 <div class="bagulha-input2">
@@ -86,9 +86,9 @@
                 </div>
                 <div class="bagulha-input-perdiaconta">
                     <label for="idfile">
-                        Envie fotos do(s) seu(s) filho(s)
+                        Envie uma foto do(s) seu(s) filho(s)
                     </label>
-                    <input name="file" id="idfile" type="file" accept=".jpg,.jpeg,.png,.gif,.pdf" multiple>
+                    <input name="file" id="idfile" type="file" accept=".jpg,.jpeg,.png,.gif,.pdf">
                 </div>
 
                 <div class="concordosim">
@@ -105,13 +105,12 @@
        </div>
      </main>
      <div class="rodape">
-     <footer>
-
-        <p>IFRN campus Santa Cruz</p>
-        <p>Trabalho de Autoria Web</p>
-        <p>Prof. Marcelo Figuereido Barbosa Júnior</p>
-        <p>Jácio Faustino de Souza</p>
-     </footer>
+        <footer>
+            <p>IFRN campus Santa Cruz</p>
+            <p>Trabalho de Autoria Web</p>
+            <p>Prof. Marcelo Figuereido Barbosa Júnior</p>
+            <p>Jácio Faustino de Souza</p>
+        </footer>
     </div>
 </body>
 </html>
