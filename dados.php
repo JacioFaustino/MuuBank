@@ -11,7 +11,7 @@
         <h2>Muubank</h2>
         
         <nav>
-            <a class="a1" href="#">Desenvolvedor</a>
+            <a class="a1" href="dev.html">Desenvolvedor</a>
             <a class="a3" href="#">Seus dados</a>
             <a class="a1" href="index.html">Registrar-se</a>
         </nav>
